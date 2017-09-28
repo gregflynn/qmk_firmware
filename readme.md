@@ -7,8 +7,8 @@
 * `sudo dfu-programmer atmega32u4 start`
 
 # Updating GH60 CHN Satan
-* `atom satan/keymap.c`
-* `pushd satan && make && popd`
+* make edits to satan/keymap.c
+* run `make satan-custom`
 * Push the button
 * `sudo ./tkg-toolkit/linux/reflash.sh satan_custom.hex`
 
