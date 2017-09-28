@@ -1,7 +1,7 @@
 # Updating S60RGB
-* `atom S60RGB/keymaps/default/keymap.c`
-* `pushd S60RGB && make default && popd`
-* Push button, or in my case short the pins
+* `atom s60_x/keymap.c`
+* `make s60_x-rgb-gfly`
+* Short pins using 2m current measure on multimeter
 * `sudo dfu-programmer atmega32u4 erase`
 * `sudo dfu-programmer atmega32u4 flash S60RGB_default.hex`
 * `sudo dfu-programmer atmega32u4 start`
