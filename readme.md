@@ -3,7 +3,7 @@
 * `make s60_x-rgb-gfly`
 * Short pins using 2m current measure on multimeter
 * `sudo dfu-programmer atmega32u4 erase`
-* `sudo dfu-programmer atmega32u4 flash S60RGB_default.hex`
+* `sudo dfu-programmer atmega32u4 flash s60_x_rgb_gfly.hex`
 * `sudo dfu-programmer atmega32u4 start`
 
 # Updating GH60 CHN Satan
