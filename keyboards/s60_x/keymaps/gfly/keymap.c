@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FL] = KEYMAP(
   KC_GRV,    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,   KC_F12, ______,  KC_DEL,  \
   S(KC_GRV), KC_PGUP, KC_UP,   KC_PGDN, KC_TRNS, RGB_SAI, RGB_SAD, RGB_HUI,  RGB_HUD, RGB_VAI, RGB_VAD, KC_HOME,  KC_END, RGB_TOG, \
-  KC_TRNS,   KC_LEFT, KC_DOWN, KC_LEFT, KC_MYCM, KC_TRNS, KC_TRNS, KC_VOLD,  KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS,  ______, KC_TRNS, \
+  KC_TRNS,   KC_LEFT, KC_DOWN, KC_RGHT, KC_MYCM, KC_TRNS, KC_TRNS, KC_VOLD,  KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS,  ______, KC_TRNS, \
   KC_TRNS,   ______,  KC_CAPS, KC_APP,  KC_CALC, KC_TRNS, KC_TRNS, RGB_MOD, KC_MUTE,  KC_MPRV, KC_MNXT, KC_MPLY,  ______, KC_TRNS, ______, \
   KC_TRNS,   KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 };
