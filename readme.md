@@ -1,3 +1,13 @@
+# Updating Quefrency
+* NOTE: sudo required to flash via dfu
+* `code ~/kb/qmk_firmware/keyboards/quefrency/keymaps/gfly65/keymap.c`
+* `sudo make quefrency:gfly65:dfu`
+
+# Updating Fourier
+* NOTE: sudo required to flash via dfu
+* `code ~/kb/qmk_firmware/keyboards/fourier/keymaps/gfly/keymap.c`
+* `sudo make fourier:gfly:dfu`
+
 # Updating S60RGB
 * `atom s60_x/keymap.c`
 * `make s60_x-rgb-gfly`
