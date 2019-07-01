@@ -1,3 +1,7 @@
+# Updating HotDox
+* NOTE: sudo required to flash via dfu
+* `sudo make hotdox:gfly:dfu`
+
 # Updating Quefrency
 * NOTE: sudo required to flash via dfu
 * `code ~/kb/qmk_firmware/keyboards/quefrency/keymaps/gfly65/keymap.c`
