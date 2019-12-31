@@ -29,9 +29,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        | Play | VolUp|       | Prev | Next |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | VolDn|       |  alt |        |      |
+ *                                 |      |      | VolDn|       | ctrl |        |      |
  *                                 | Space| super|------|       |------| Enter  | Space|
- *                                 |      |      |  fn  |       | ctrl |        |      |
+ *                                 |      |      |  fn  |       |  alt |        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -53,8 +53,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_RBRC,     KC_N,   KC_M,  KC_COMM,KC_DOT, KC_SLSH,KC_RSPC,
                                KC_MINS,  KC_EQL,KC_RALT,KC_RGUI,KC_RCTL,
              KC_MPRV, KC_MNXT,
-             KC_RALT ,
-             KC_RCTL, KC_ENT, KC_SPC
+             KC_RCTL,
+             KC_RALT, KC_ENT, KC_SPC
     ),
 /* Keymap 1: Symbol Layer
  *
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |         |      | Caps |  App | Calc |      |      |           |      |      |   1  |   2  |   3  |   /  |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |       |      |      |      |      |                                       |   =  |    - |   +  |   0  | bksp |
+ *   |       |      |      |      |      |                                       |   -  |    = |   +  |   0  | bksp |
  *   `-----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        |      |      |       |      |      |
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______, _______, KC_7,   KC_8,    KC_9,    KC_ASTR, KC_F12,
                 _______, KC_4,   KC_5,    KC_6,    KC_DOT,  _______,
        _______, _______, KC_1,   KC_2,    KC_3,    _______, _______,
-                         KC_EQL, KC_MINS, KC_PLUS,    KC_0, KC_BSPC,
+                         KC_MINS,KC_EQL,  KC_PLUS,    KC_0, KC_BSPC,
        _______, _______,
        _______,
        _______, _______, _______
