@@ -82,18 +82,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        // left hand
        KC_GRV, KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F11,
        KC_TILD,KC_PGUP,KC_UP,  KC_PGDN,_______,_______,_______,
-       _______,KC_LEFT,KC_DOWN,KC_RGHT,KC_MYCM,_______,
-       _______,_______,KC_CAPS,KC_APP, KC_CALC,_______,_______,
+       _______,KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,
+       _______,_______,KC_CAPS,KC_APP, _______,_______,_______,
        _______,_______,_______,_______,_______,
                                        _______,_______,
                                                _______,
                                _______,_______,_______,
        // right hand
        KC_F12,  KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_DEL,
-       _______, _______, KC_7,   KC_8,    KC_9,    KC_ASTR, KC_F12,
-                _______, KC_4,   KC_5,    KC_6,    KC_DOT,  _______,
-       _______, _______, KC_1,   KC_2,    KC_3,    _______, _______,
-                         KC_MINS,KC_EQL,  KC_PLUS,    KC_0, KC_BSPC,
+       _______, _______, _______,KC_PGUP, KC_UP,   KC_PGDN, _______,
+                _______, _______,KC_LEFT, KC_DOWN, KC_RGHT, _______,
+       _______, _______, _______,_______, _______, _______, _______,
+                         _______,_______, _______, _______, _______,
        _______, _______,
        _______,
        _______, _______, _______
@@ -142,23 +142,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    // dynamically generate these.
-    case VRSN:
-      if (record->event.pressed) {
-        SEND_STRING (QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
-      }
-      return false;
-      break;
-    case RGB_SLD:
-      if (record->event.pressed) {
-        #ifdef RGBLIGHT_ENABLE
-          rgblight_mode(1);
-        #endif
-      }
-      return false;
-      break;
-  }
   return true;
 }
 
