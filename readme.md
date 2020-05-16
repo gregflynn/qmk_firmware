@@ -5,7 +5,7 @@
 # Updating Quefrency
 * NOTE: sudo required to flash via dfu
 * `code ~/kb/qmk_firmware/keyboards/quefrency/keymaps/gfly65/keymap.c`
-* `sudo make quefrency:gfly65:dfu`
+* `sudo make keebio/quefrency/rev1:gfly65:dfu`
 
 # Updating Fourier
 * NOTE: sudo required to flash via dfu
