@@ -1,3 +1,6 @@
+# Updating KBD67
+* `sudo make kbdfans/kbd67/rev2:gfly:dfu`
+
 # Updating HotDox
 * NOTE: sudo required to flash via dfu
 * `sudo make hotdox:gfly:dfu`
