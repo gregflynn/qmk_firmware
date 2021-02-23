@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
-        KC_ESC,         KC_1,         KC_2,   KC_3,   KC_4,   KC_5,   _______,
+        KC_ESC,         KC_1,         KC_2,   KC_3,   KC_4,   KC_5,   TG(SYMB),
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   KC_VOLU,
         MO(SYMB),       KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSPO,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_VOLD,
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |         | Left | Down | Right|      |      |------|           |------|      |      |      |      |      |        |
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |         |      | Caps |  App |      |      |      |           |      |      |      |      |      |  Up  |        |
+ * |         |      |      |      |      |      |      |           |      |      |      |      |      |  Up  |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |       |      |      |      |      |                                       |      |      | Left | Down |Right |
  *   `-----------------------------------'                                       `----------------------------------'
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_GRV, KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  _______,
        KC_TILD,KC_PGUP,KC_UP,  KC_PGDN,_______,_______,_______,
        _______,KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,
-       _______,_______,KC_CAPS,KC_APP, _______,_______,_______,
+       _______,_______,_______,_______,_______,_______,_______,
        _______,_______,_______,_______,_______,
                                        _______,_______,
                                                _______,
